@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "190400845159",
+    "project_id": "readysell-b4782",
+    "storage_bucket": "readysell-b4782.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:190400845159:android:75768dbdf6c2233fc88bc2",
+        "android_client_info": {
+          "package_name": "com.joelnyaga.ReadySell"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "190400845159-81rn65537a7vkjv526lpdl65qbsh15qg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.joelnyaga.ReadySell",
+            "certificate_hash": "d8ffe1bfd3513fd607e7ddbd2b14e676604b518c"
+          }
+        },
+        {
+          "client_id": "190400845159-sqpk7o0bsdq3sa49j3ai7ic8oknuv31p.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.joelnyaga.ReadySell",
+            "certificate_hash": "d8954fb03ecb2de8de5dd85cbd42a0abab9524d7"
+          }
+        },
+        {
+          "client_id": "190400845159-4aaoumtog516em1d03m7e83ql22mfaqj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDnz_8HHCk3kOL0Yv8G9S-WMAQAuXL_2cM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "190400845159-4aaoumtog516em1d03m7e83ql22mfaqj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

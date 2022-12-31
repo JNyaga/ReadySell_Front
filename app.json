@@ -4,15 +4,16 @@
     "slug": "ReadySell",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./app/assets/icon.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/splash.png",
-      "resizeMode": "contain",
+      "image": "./app/assets/splash.png",
+      "resizeMode": "cover",
       "backgroundColor": "#ffffff"
     },
     "updates": {
-      "fallbackToCacheTimeout": 0
+      "fallbackToCacheTimeout": 0,
+      "url": "https://u.expo.dev/ceebcde2-7549-42f9-9cfa-68ee95e8bf05"
     },
     "assetBundlePatterns": [
       "**/*"
@@ -21,13 +22,37 @@
       "supportsTablet": true
     },
     "android": {
+      "googleServicesFile": "./google-services.json",
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./app/assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "package": "com.joelnyaga.ReadySell"
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./app/assets/favicon.png"
+    },
+    "extra": {
+      "bugsnag": {
+        "apiKey": "15b3e34ab2644a2d4a0129ce2cc8310d"
+      },
+      "eas": {
+        "projectId": "ceebcde2-7549-42f9-9cfa-68ee95e8bf05"
+      }
+    },
+    "plugins": [
+      "@bugsnag/plugin-expo-eas-sourcemaps"
+    ],
+    "hooks": {
+      "postPublish": [
+        {
+          "file": "@bugsnag/expo/hooks/post-publish.js",
+          "config": {}
+        }
+      ]
+    },
+    "runtimeVersion": {
+      "policy": "sdkVersion"
     }
   }
 }
