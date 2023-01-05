@@ -27,7 +27,6 @@ const Listingscreen = ({ navigation }) => {
         listing => listing.title.toLowerCase().includes(searchText.toLowerCase())
     );
 
-    <SearchBar onChangeText={text => setSearchText(text)} searchText={searchText} />
 
     return (
         <>
@@ -38,6 +37,7 @@ const Listingscreen = ({ navigation }) => {
                     <AppButton title="Retry" onPress={loadListings} />
                 </>}
                 {/* <ActivityIndicator animating={true} size="large" /> */}
+                <SearchBar onChangeText={text => setSearchText(text)} searchText={searchText} />
                 <FlatList
                     data={filteredListings}
                     keyExtractor={listing => listing._id}
