@@ -11,13 +11,16 @@ const MapViewScreen = ({ route }) => {
     })
     const listing = route.params
     const userLocation = () => {
-        const { location } = route.params
-        setMapRegion({
-            latitude: location.latitude,
-            longitude: location.longitude,
-            latitudeDelta: 0.0922,
-            longitudeDelta: 0.0421,
-        })
+        if (route.params.location) {
+            const { location } = route.params
+            setMapRegion({
+                latitude: location.latitude,
+                longitude: location.longitude,
+                latitudeDelta: 0.0922,
+                longitudeDelta: 0.0421,
+            })
+
+        }
     }
     useEffect(() => {
         userLocation()
