@@ -1,7 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, Dimensions } from 'react-native';
-import { useDimensions, useDeviceOrientation } from "@react-native-community/hooks"
 import { NavigationContainer } from "@react-navigation/native";
 
 
@@ -19,7 +16,6 @@ logger.start()
 
 export default function App() {
   const [user, setUser] = useState();
-  const [isReady, setIsReady] = useState(false)
 
   //retore token when app restarts  (in authStorage)
   const restoreUser = async () => {
@@ -32,12 +28,6 @@ export default function App() {
     restoreUser();
   }, [])
 
-  // if (!isReady)
-  //   return (
-  //     <AppLoading startAsync={restoreToken} onFinish={() => setIsReady(true)} />
-  //   );
-  // console.log(Dimensions.get("screen"));
-  console.log(useDimensions(), useDeviceOrientation())
   return (
     <AuthContext.Provider value={{ user, setUser }}>
       <OfflineNotice />
@@ -49,14 +39,3 @@ export default function App() {
 
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#f8f4f4',
-    // alignItems: 'center',
-    // justifyContent: 'center',
-    padding: 20,
-    paddingTop: 100,
-
-  },
-});
