@@ -1,3 +1,4 @@
+/* Entry Point to the App Deals Nvigation to Login and Logout State */
 import React, { useEffect, useState } from 'react';
 import { NavigationContainer } from "@react-navigation/native";
 
