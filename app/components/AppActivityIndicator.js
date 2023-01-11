@@ -3,6 +3,7 @@ import LottieView from 'lottie-react-native';
 import { View, StyleSheet } from 'react-native';
 
 const AppActivityIndicator = ({ visible = false }) => {
+    // LottieView appears when app is loading eg getting data from api
     if (!visible) return null;
     return (
         <View style={styles.overlay}>
