@@ -4,6 +4,7 @@ import client from "./client";
 const register = (userInfo) => client.post("/users", userInfo);
 
 const updateUserImage = (image, onUploadProgress) => {
+    // to update user profile image
     const data = new FormData()
     data.append('image', {
         name: 'profile_image',

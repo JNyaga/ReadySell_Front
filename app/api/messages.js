@@ -1,6 +1,6 @@
 import client from "./client";
 
-
+// get specific user messages from apis
 const getMessages = () => client.get("/messages")
 
 const send = (message, listingId) =>

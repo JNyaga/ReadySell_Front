@@ -1,7 +1,7 @@
 import { create } from 'apisauce'
 import cache from '../utility/cache';
 import authStorage from '../auth/storage';
-
+// abstraction layer to interact with api
 const apiClient = create({
     baseURL: "https://readysell-api.cyclic.app/api/"
 })

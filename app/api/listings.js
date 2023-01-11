@@ -2,12 +2,14 @@ import client from "./client"
 
 const endpoint = '/listings';
 
+//get all listings from api
 const getListings = () => client.get(endpoint)
 
+// get a specific user listings
 const getUserListings = () => client.get("/my/listings")
 
 const addListing = (listing, onUploadProgress) => {
-    // senf form data to api
+    // send form data to api
     const data = new FormData()
     data.append('title', listing.title);
     data.append('price', listing.price);
