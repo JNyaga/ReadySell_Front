@@ -7,7 +7,7 @@ import AppText from './AppText';
 import colors from '../config/colors';
 
 const OfflineNotice = () => {
-    const netInfo = useNetInfo();
+    const netInfo = useNetInfo();//check availability of internet
     // console.log(netInfo)
     if (netInfo.type !== "unknown" && netInfo.isInternetReachable === false)
         return (
