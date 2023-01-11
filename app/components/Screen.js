@@ -3,6 +3,7 @@ import { StyleSheet, SafeAreaView, View } from 'react-native';
 import Constants from 'expo-constants';
 
 const Screen = ({ children, style }) => {
+    // this component will prvent the screen from extending above the notch
     return (
         <SafeAreaView style={[styles.screen, style]}>
             <View style={[styles.view, style]}  >

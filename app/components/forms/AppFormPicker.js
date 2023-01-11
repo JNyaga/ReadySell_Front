@@ -1,4 +1,3 @@
-import { StyleSheet } from 'react-native'
 import React from 'react'
 import { useFormikContext } from 'formik';
 
@@ -26,4 +25,3 @@ const AppFormPicker = ({ items, name, numberOfColumns, width, PickerItemComponen
 
 export default AppFormPicker
 
-const styles = StyleSheet.create({})
