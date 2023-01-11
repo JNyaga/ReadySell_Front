@@ -1,3 +1,4 @@
+// Logs any error to the Bugsnag platform
 import Bugsnag from '@bugsnag/expo';
 
 const log = (error) => Bugsnag.notify(error);

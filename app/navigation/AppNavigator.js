@@ -16,6 +16,7 @@ import useNotifications from './../hooks/useNotifications';
 const Tab = createBottomTabNavigator();
 
 const AppNavigator = () => {
+    //useNotification->helps navigate user to messages when popup is clicked
     useNotifications(() => navigation.navigate("AccountNav", { screen: 'Messages' }))
 
     return (

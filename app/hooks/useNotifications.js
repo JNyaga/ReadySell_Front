@@ -16,6 +16,9 @@ Notifications.setNotificationHandler({
 
 
 export default useNotifications = (notificationListener) => {
+    /* hook used to easen using notification
+    @notificationListener-> action to be performed of Notification recieved and clicked
+     */
     useEffect(() => {
         registerForPushNotifications()
 
