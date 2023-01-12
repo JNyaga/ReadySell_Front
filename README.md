@@ -1,6 +1,26 @@
-[TOC]
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
+- [ReadySell](#readysell)
+  - [Inspiration](#inspiration)
+  - [Built With](#built-with)
+  - [Architecture](#architecture)
+  - [Getting Started](#getting-started)
+    - [1.Download the app:](#1download-the-app)
+    - [2. Clone and Run in Expo Go](#2-clone-and-run-in-expo-go)
+  - [Features](#features)
+    - [Login/Register](#loginregister)
+    - [Listing and AddListing](#listing-and-addlisting)
+    - [Messaging and Contacting Seller](#messaging-and-contacting-seller)
+  - [API](#api)
+  - [Known Issues](#known-issues)
+  - [Future](#future)
+  - [Attribution:](#attribution)
+  - [Author](#author)
+    - [Joel Nyaga](#joel-nyaga)
 
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 # ReadySell
 
@@ -50,7 +70,7 @@ To start using the app you can use two method.Which are to download the app from
 - ```bash
   npx expo install
   npx expo start
-  
+
   ```
 
 open your **Expo Go** and scan the QRcode generated after above code
@@ -78,19 +98,19 @@ You can contact a seller of a product and see the messages recieved from buyers 
 
 > The api can be accessed from `https://readysell-api.cyclic.app/`
 
-| \***\*Method\*\*** | \***\*URI\*\***       | \***\*Function\*\***                                         |
-| ------------------ | --------------------- | ------------------------------------------------------------ |
-| \***\*GET\*\***    | `/api/categories`     | \***\*Gets the list of all categories stored in the database\*\*** |
-| \***\*GET\*\***    | `/api/listing/:id`    | \***\*Get the listing of item with `id\*\***                 |
-| \***\*GET\*\***    | `/api/listings`       | \***\*Get the list of all listings stored\*\***              |
-| \***\*POST\*\***   | `/api/listings`       | \***\*Add an item listing\*\***                              |
-| \***\*GET\*\***    | `/api/user/:id`       | \***\*Get a user with the \*\***`id`\***\* given\*\***       |
-| \***\*GET\*\***    | `/api/users`          | \***\*Get a list of all users in the users database\*\***    |
-| \***\*POST\*\***   | `/api/users`          | \***\*Creates a new user if only the user does not exists\*\*** |
+| \***\*Method\*\*** | \***\*URI\*\***       | \***\*Function\*\***                                                                                                       |
+| ------------------ | --------------------- | -------------------------------------------------------------------------------------------------------------------------- |
+| \***\*GET\*\***    | `/api/categories`     | \***\*Gets the list of all categories stored in the database\*\***                                                         |
+| \***\*GET\*\***    | `/api/listing/:id`    | \***\*Get the listing of item with `id\*\***                                                                               |
+| \***\*GET\*\***    | `/api/listings`       | \***\*Get the list of all listings stored\*\***                                                                            |
+| \***\*POST\*\***   | `/api/listings`       | \***\*Add an item listing\*\***                                                                                            |
+| \***\*GET\*\***    | `/api/user/:id`       | \***\*Get a user with the \*\***`id`\***\* given\*\***                                                                     |
+| \***\*GET\*\***    | `/api/users`          | \***\*Get a list of all users in the users database\*\***                                                                  |
+| \***\*POST\*\***   | `/api/users`          | \***\*Creates a new user if only the user does not exists\*\***                                                            |
 | \***\*POST\*\***   | `/api/auth`           | \***\*Creates an authtoken and send it to user for authentication.\*\*** \***\*It acts as a middleware for accessing\*\*** |
-| \***\*POST\*\***   | `/api/expoPushTokens` | \***\*store a token that allows users to receive message notifications\*\*** |
-| \***\*GET\*\***    | `/api/messages`       | \***\*Gets a list of messages for specific user\*\***        |
-| \***\*POST\*\***   | `/api/messages`       | \***\*Create a new message in the message a database and pushes it to specific user\*\*** |
+| \***\*POST\*\***   | `/api/expoPushTokens` | \***\*store a token that allows users to receive message notifications\*\***                                               |
+| \***\*GET\*\***    | `/api/messages`       | \***\*Gets a list of messages for specific user\*\***                                                                      |
+| \***\*POST\*\***   | `/api/messages`       | \***\*Create a new message in the message a database and pushes it to specific user\*\***                                  |
 
 ## Known Issues
 
@@ -116,4 +136,4 @@ If you have any feedback (ex: feature ideas) or would like to contribute to this
 
 ### Joel Nyaga
 
-[Github](https://github.com/JNyaga)  [LinkedIn](https://www.linkedin.com/in/joel-nyaga-muriithi-a3404288)
+[Github](https://github.com/JNyaga) [LinkedIn](https://www.linkedin.com/in/joel-nyaga-muriithi-a3404288)
