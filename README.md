@@ -71,7 +71,7 @@ To start using the app you can use two method.Which are to download the app from
 - ```bash
   npx expo install
   npx expo start
-
+  
   ```
 
 open your **Expo Go** and scan the QRcode generated after above code
@@ -80,14 +80,24 @@ open your **Expo Go** and scan the QRcode generated after above code
 
 ### Login/Register
 
-![](assets/20230112_225852_image.png)
+|                                                              |                                                              |                                                              |
+| ------------------------------------------------------------ | :----------------------------------------------------------: | ------------------------------------------------------------ |
+| <img src="assets/20230112_225852_image.png" style="zoom:80%;" /> | <img src="assets/IMG-20230112-WA0009.jpg" style="zoom:80%;" /> | <img src="assets/IMG-20230112-WA0012.jpg" style="zoom: 25%;" /> |
+
+
+
+
 
 ### Listing and AddListing
 
 - The Listing screen is used to view items that are being sold and see which will peek your interest.
-- The AddListing is utilized to post an item you wish to sell
 
-  <img src="assets/20230112_231304_image.png" style="zoom:80%;" />
+- The Add Listing is utilized to post an item you wish to sell
+
+  | <img src="assets/20230112_231304_image.png" style="zoom:80%;" /> | <img src="assets/IMG-20230112-WA0011.jpg" style="zoom:80%;" /> |
+  | ------------------------------------------------------------ | ------------------------------------------------------------ |
+
+  
 
 ### Messaging and Contacting Seller
 
